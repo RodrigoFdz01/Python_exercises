@@ -1,4 +1,4 @@
-'''
+
 ######  Ejercicio  #####
 
 La función max() del ejercicio 1 (primera parte) y la función max_de_tres() 
@@ -166,4 +166,3 @@ def es_bisiesto():
 
 print(es_bisiesto())
 
-'''
