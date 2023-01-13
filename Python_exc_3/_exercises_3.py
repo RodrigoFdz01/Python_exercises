@@ -21,7 +21,7 @@ Felicidades
 '''
 import random
 
-#largo_cadena = int(input("Dime la extension de la cadena..."))
+largo_cadena = int(input("Dime la extension de la cadena..."))
 
 # def num_aleat():
 #     numero_aleatorio = ""
@@ -41,7 +41,9 @@ import random
 #     print(numero_aleatorio)    
 #     number_guess = str(int(input("Intenta adivinar la cadena, ingresa de a un numero a la vez...")))
 #     current_number = ""
-#     if numero_aleatorio.find(number_guess[0]):
+
+    
+#     if numero_aleatorio.find(number_guess) :
 #         current_number.join(number_guess)
 #         print(f'Adivinaste!! {number_guess}, esta en el numero, continua...')
 #     else:
@@ -50,7 +52,7 @@ import random
 
 
 ### otra solucion de numeros de 1 digito
-
+'''
 num = random.randint(1, 10)
 guess = ""
 
@@ -63,3 +65,26 @@ while guess != num:
         break
     else:
         print("nope, sorry. try again!")
+'''
+
+
+def num_aleat():
+    numero_aleatorio = ""
+    for i in range(largo_cadena):
+        x = random.randint(0, 9)
+        x = str(x)
+        numero_aleatorio += x
+    print(numero_aleatorio)    
+    number_guess = str(int(input("Intenta adivinar la cadena, ingresa de a un numero a la vez...")))
+    current_number = []
+
+
+    while len(current_number) != int(largo_cadena):
+        if numero_aleatorio.find(number_guess) == -1 :
+             print("No adivinaste")
+        else:
+            current_number.append(number_guess)
+            print(f'Adivinaste!! {number_guess}, esta en el numero, continua...')
+            print(current_number)
+
+print(num_aleat())
