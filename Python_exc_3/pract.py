@@ -5,7 +5,7 @@
 #     print(contador)
 #     if contador == 5:
 #         break
-
+'''
 current_numbers = []
 lista = "123"
 total_len = len(lista)
@@ -23,3 +23,16 @@ while len(lista) > len(current_numbers):
 
 count += 1
 print("igualaste la extension")
+
+
+'''
+def sumattion(number):
+    summation = 0
+    limit = number +1
+    for i in range(1,limit):
+        summation = summation + i
+    print(summation) 
+
+sumattion(4)
+
+
