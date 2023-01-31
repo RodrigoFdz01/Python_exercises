@@ -1,10 +1,11 @@
 
 ######  Ejercicio  #####
-
+'''
 La función max() del ejercicio 1 (primera parte) y la función max_de_tres() 
 del ejercicio 2 (primera parte), solo van a funcionar para 2 o 3 números.
  Supongamos que tenemos mas de 3 números o no sabemos cuantos números son.
   Escribir una función max_in_list() que tome una lista de números y devuelva el mas grande.
+'''
 
 def max_in_list(list):
     list = (1,2,322,4,35,46)
@@ -22,9 +23,10 @@ print(max_in_list([1,2,322,4,35,46]))
 
 
 ######  Ejercicio 2 #####
-
+'''
 Escribir una función mas_larga() que tome una lista de palabras
 y devuelva la mas larga.
+'''
 
 def mas_larga(lista):
   mas_larga2=""
@@ -36,9 +38,10 @@ def mas_larga(lista):
 print(mas_larga(["hola","si", "casiessdfg","function"])) 
 
 ######  Ejercicio 3 #####
-
+'''
 Escribir una función filtrar_palabras() que tome una lista de palabras y un entero n,
  y devuelva las palabras que tengan mas de n caracteres.
+'''
 
 def filtrar_palabras(lista, number):
   for i in lista:
@@ -47,11 +50,12 @@ def filtrar_palabras(lista, number):
 print(filtrar_palabras(["hola","si", "palabras","function"],5))
 
 ######  Ejercicio 4  ######
-
+'''
 Escribir un programa que le diga al usuario que ingrese una cadena. 
 El programa tiene que evaluar la cadena y decir cuantas letras mayúsculas tiene.
-from itertools import count
+'''
 
+from itertools import count
 
 def c_mayusculas():
   word = input("ingresa una palabra...")
@@ -64,8 +68,9 @@ def c_mayusculas():
 print(c_mayusculas())       
 
 ###  Ejercicio 5  ???????
-
+'''
 Construir un pequeño programa que convierta números binarios en enteros.
+'''
 def aDecimal(numeroBin):
     numeroBin = str(numeroBin)
     decimal = 0
@@ -77,16 +82,14 @@ def aDecimal(numeroBin):
 
 print(aDecimal(101)) 
 
-
-
 ######  Ejercicio 6 #####
-
+'''
 Escribir un pequeño programa donde:
 - Se ingresa el año en curso.
 - Se ingresa el nombre y el año de nacimiento de tres personas.
 - Se calcula cuántos años cumplirán durante el año en curso.
 - Se imprime en pantalla.
-
+'''
 def program():
   year = input("ingresa año en curso...")
   for i in range(3):
@@ -97,9 +100,11 @@ def program():
 print(program())
 
      ######  Ejercicio 7 #####
+'''
 Definir una tupla con 8 edades de personas.
 Imprimir la cantidad de personas con edades superiores a 20.
 Puedes variar el ejercicio para que sea el usuario quien ingrese las edades.
+'''     
 
 def ages_over_20(lista):
   counter = 0
@@ -111,9 +116,11 @@ def ages_over_20(lista):
 print(ages_over_20((21,11,45,23,17,17,22,19)))
 
       ######  Ejercicio 8 #####
+'''
 Definir una lista con un conjunto de nombres, imprimir la cantidad q comienzan 
 con la letra a.
 También se puede hacer elegir al usuario la letra a buscar.  (Un poco mas emocionante)
+      '''
 
 def main():
     x = input ("Cuantos nombres quieres ingresar?: ")
@@ -132,10 +139,12 @@ print(main())
 
 
     #### Ejercicio 9  #####
+'''
 Crear una función contar_vocales(), que reciba una palabra y
  cuente cuantas letras "a" tiene,
  cuantas letras "e" tiene y así hasta completar todas las vocales.
 Se puede hacer que el usuario sea quien elija la palabra.
+'''
 
 def contar_vocales():
   word = input("ingresa una palabra: ")
@@ -149,9 +158,12 @@ def contar_vocales():
   print(contador)
 print(contar_vocales())
 
+
  ##### Ejercicio 10 ####
+'''
 Escriba una función es_bisiesto() que determine si un año determinado es un año
 bisiesto.Un año bisiesto es divisible por 4, pero no por 100. También es divisible por 400
+'''
 
 def es_bisiesto():
     print ("Comprueba años bisiestos:   ")
@@ -165,4 +177,3 @@ def es_bisiesto():
         print ("El año " +str(a)+ " no es bisiesto")
 
 print(es_bisiesto())
-
