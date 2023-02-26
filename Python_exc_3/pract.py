@@ -8,7 +8,7 @@
 
 
 
-
+# ingresar numeros hasta completar todos los match del array lista
 # current_numbers = []
 # lista = "123"
 # total_len = len(lista)
@@ -19,7 +19,7 @@
 
 #     if lista.find(user_number) != -1:
 #         current_numbers.append(user_number)
-#         print("si")
+#         print("si, correcto!!!")
 #         print(current_numbers)
 #     else:
 #         print("no esta !!!")
@@ -36,19 +36,20 @@ Ejemplo:
 - sumattion(8) debe retornar 36  
 
 '''
-
-#def sumattion(number):
+# def sumattion():
+#    number = int(input("ingresa un numero > a 0: "))
 #    summation = 0
-#    limit = number +1
+#    limit = number + 1
 #    for i in range(1,limit):
-#        summation = summation + i
+    #    summation = summation + i
 #    print(summation) 
-#
-#sumattion(4)
+
+# sumattion()
+
 
 
 '''
-Crea una aplicacion qu obtenga los elementos impares de inalista pasada por parametro con filter
+Crea una aplicacion q obtenga los elementos impares de una lista pasada por parametro con filter
 y realice una suma de esos datos obtenidos mediante reduce
 '''
 
@@ -133,7 +134,11 @@ MOstrar ejemplos de uso de cada uno para verifcar el funcionamiento
 '''
 Replace the first two occurrences of a white-space character with the digit 9:
 '''
+#????
 
+'''
+find a expression in a str
+'''
 # import re
 # txt = "The rain in Spain"
 # word = "rains"
@@ -142,6 +147,11 @@ Replace the first two occurrences of a white-space character with the digit 9:
 #     print("encontro")
 # else:
 #     print("NO LO ENCONTRO")
+
+
+'''
+loop in both list, find and append the match
+'''
 
 # a= [1,2,3]
 
@@ -154,7 +164,6 @@ Replace the first two occurrences of a white-space character with the digit 9:
 #             if i == j:
 #                 new_arr.append(i)
 #     return new_arr
-	
 # print(super_func(a,b))
 
 
